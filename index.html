@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Muhammad Farhan Octaviano</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script>
+    function toggleDarkMode() {
+      document.documentElement.classList.toggle('dark');
+    }
+  </script>
+  <style>
+    body {background: linear-gradient(135deg,#0f172a,#1e293b,#334155);background-size:400% 400%;animation:gradientShift 10s ease infinite;}
+    @keyframes gradientShift {0%{background-position:0% 50%;}50%{background-position:100% 50%;}100%{background-position:0% 50%;}}
+    .glass {background:rgba(255,255,255,0.1);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,0.2);}
+  </style>
+</head>
+<body class="text-white">
+<section class="text-center py-16 px-4" data-aos="fade-down">
+  <img src="foto-farhan.jpg" class="w-40 h-40 mx-auto rounded-full shadow-lg border-4 border-white/30 mb-6"/>
+  <h1 class="text-4xl font-bold tracking-wide drop-shadow-lg">Muhammad Farhan Octaviano</h1>
+  <p class="text-xl mt-2 text-blue-200">IT Support Specialist</p>
+  <button onclick="toggleDarkMode()" class="mt-5 px-6 py-2 bg-white/20 hover:bg-white/40 text-white rounded-full transition backdrop-blur-md">Toggle Dark Mode</button>
+</section>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+</body>
+</html>
